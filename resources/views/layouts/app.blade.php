@@ -24,13 +24,18 @@
 <body>
     <div id="app">
         @include('inc.navbar')
-    <div class="container">
+    <div class="container-fluid">
     
 
-        <main class="py-4">
+        <main class="p-1">
+            @include('inc.messages')
             @yield('content')
         </main>
     </div>
 </div>
+<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'article-ckeditor' );
+</script>
 </body>
 </html>

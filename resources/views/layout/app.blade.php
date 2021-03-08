@@ -10,12 +10,16 @@
 </head>
 <body>
  @include('inc.navbar')
+
 {{-- @include('inc.background') --}}
-    <div class="container mt-md-2">
+    
  {{-- @include('inc.messages') --}}
 
-   @yield('content')
-    </div>
+   
+   
+    @yield('content')
+
+    
 
 
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
